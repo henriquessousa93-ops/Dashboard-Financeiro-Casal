@@ -42,7 +42,7 @@ O objetivo é transformar movimentações financeiras em informações que facil
 
 ---
 
-## 🖼️ Páginas do Dashboard
+## 🖼️ Funcionalidades do Dashboard
 
 ### 📊 Visão Geral
 
