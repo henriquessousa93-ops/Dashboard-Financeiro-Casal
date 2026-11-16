@@ -36,7 +36,7 @@ O objetivo é transformar movimentações financeiras em informações que facil
 
 ## 🎥 Demonstração
 
-![Dashboard HenriTan](./Images/dashboard-demo.gif)
+![Dashboard HenriTan](./dashboard-demo.gif)
 
 > ⚠️ **Aviso:** Os valores e dados apresentados nos gráficos são fictícios e utilizados exclusivamente para fins demonstrativos. Nenhuma informação financeira real é exibida.
 
