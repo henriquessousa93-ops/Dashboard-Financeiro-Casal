@@ -1,243 +1,323 @@
 # Dashboard-Financeiro-Casal
 Projeto de controle financeiro para casais, com tratamento de dados, consolidação de extratos e dashboard interativo.
 
-# Sobre o Projeto
 
-O HenriTan é um projeto de controle financeiro para casais, desenvolvido com o objetivo de centralizar informações financeiras individuais e compartilhadas em uma única estrutura de análise.
+# 📊 HenriTan | Dashboard Financeiro para Casais
 
-A proposta surgiu de uma necessidade prática: facilitar o acompanhamento das despesas, proporcionar transparência financeira e permitir que duas pessoas compreendam melhor seus hábitos de consumo e planejamento financeiro.
+<p align="center">
+
+![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Power Query](https://img.shields.io/badge/Power%20Query-742774?style=for-the-badge)
+![ETL](https://img.shields.io/badge/ETL-Data%20Preparation-2563EB?style=for-the-badge)
+![Financial Analytics](https://img.shields.io/badge/Financial-Analytics-0F766E?style=for-the-badge)
+![Data Visualization](https://img.shields.io/badge/Data-Visualization-5B5BD6?style=for-the-badge)
+
+</p>
+
+---
+
+## 📌 Sobre o Projeto
+
+O **HenriTan** é um projeto de controle financeiro para casais, desenvolvido no **Microsoft Excel**, utilizando **Power Query** para automatizar a importação, o tratamento e a consolidação de movimentações bancárias.
+
+A proposta surgiu de uma necessidade prática: proporcionar uma visão organizada das finanças individuais e compartilhadas, permitindo que duas pessoas acompanhem seus gastos, comparem hábitos de consumo e planejem seus objetivos financeiros em conjunto.
 
 O projeto contempla diferentes etapas de um processo analítico:
 
-Importação de extratos bancários
+- Extração de dados de diferentes instituições financeiras
+- Tratamento e transformação dos dados (ETL)
+- Padronização de informações bancárias
+- Consolidação de uma base histórica
+- Categorização de movimentações financeiras
+- Desenvolvimento de indicadores
+- Storytelling
+- Design de Dashboard
+- Geração de Insights
 
-Extração, tratamento e transformação dos dados (ETL)
+O objetivo é transformar movimentações financeiras em informações que facilitem a organização, a transparência e a tomada de decisão financeira a dois.
 
-Padronização de informações de diferentes instituições financeiras
+---
 
-Consolidação de uma base histórica
+## 🎥 Demonstração
 
-Categorização de lançamentos
+![Dashboard Preview](./Images/dashboard-preview.png)
 
-Construção de indicadores
+> ⚠️ **Aviso:** Os valores e dados apresentados nos gráficos são fictícios e utilizados exclusivamente para fins demonstrativos. Nenhuma informação financeira real é exibida.
 
-Design e desenvolvimento do dashboard
+---
 
-Análise comparativa dos gastos
+## 🖼️ Páginas do Dashboard
 
-O objetivo é transformar movimentações financeiras em informações que ajudem o casal a tomar decisões mais conscientes.
+### 📊 Visão Geral
 
-Demonstração
+- Resumo das movimentações financeiras
+- Acompanhamento das despesas
+- Visão consolidada das finanças do casal
+- Comparação dos gastos individuais
 
-Prévia do dashboard:
+---
 
+### 👤 Controle Individual
 
+- Acompanhamento financeiro por pessoa
+- Distribuição das despesas por categoria
+- Identificação dos principais grupos de consumo
+- Análise dos hábitos financeiros individuais
 
-Os dados apresentados nas demonstrações visuais são fictícios e utilizados exclusivamente para fins ilustrativos.
+---
 
-Páginas do Dashboard
+### ❤️ Comparação do Casal
 
-Visão Geral
+- Comparativo dos gastos entre as duas pessoas
+- Participação individual nas despesas
+- Análise das diferenças de consumo
+- Visão compartilhada da organização financeira
 
-Resumo financeiro do casal
+---
 
-Acompanhamento das despesas
+### 💰 Análise de Despesas
 
-Comparação entre os gastos individuais
+- Distribuição dos gastos por categoria
+- Identificação das maiores despesas
+- Evolução das movimentações financeiras
+- Comparação dos gastos ao longo dos períodos
 
-Visão consolidada da movimentação financeira
+---
 
-Controle Individual
+## 🛠 Tecnologias Utilizadas
 
-Acompanhamento dos gastos de cada pessoa
+- Microsoft Excel
+- Power Query
+- ETL (Extract, Transform, Load)
+- Tratamento e transformação de dados
+- Consolidação de bases de dados
+- Categorização de transações
+- Data Visualization
+- Dashboard Design
+- Storytelling com Dados
 
-Distribuição das despesas por categoria
+---
 
-Identificação dos principais grupos de consumo
+## 📂 Estrutura do Projeto
 
-Comparação do Casal
-
-Comparativo de despesas entre as duas pessoas
-
-Análise da participação individual nos gastos
-
-Identificação de diferenças nos hábitos de consumo
-
-Análise de Despesas
-
-Distribuição dos gastos por categoria
-
-Evolução das despesas ao longo do tempo
-
-Identificação dos principais pontos de consumo
-
-Tecnologias Utilizadas
-
-Microsoft Excel
-
-Power Query
-
-ETL (Extract, Transform, Load)
-
-Tratamento e organização de dados
-
-Categorização de transações
-
-Data Visualization
-
-Dashboard Design
-
-Estrutura do Projeto
-
-HenriTan/
+```text
+📁 HenriTan
 │
 ├── README.md
 │
-├── Dashboard/
-│   └── arquivo-do-dashboard
+├── 📁 Dashboard
+│   └── Dashboard.xlsx
 │
-├── Imagens/
-│   ├── capa.png
+├── 📁 Images
+│   ├── dashboard-preview.png
 │   ├── visao-geral.png
 │   ├── controle-individual.png
 │   ├── comparacao-casal.png
 │   └── analise-despesas.png
 │
-└── Documentacao/
-    ├── PowerQuery.md
-    ├── ETL.md
-    └── Indicadores.md
+├── 📁 Documentacao
+│   ├── PowerQuery.md
+│   ├── ETL.md
+│   ├── Categorizacao.md
+│   └── Indicadores.md
+│
+└── 📁 Video
+    └── dashboard-demo.mp4
+```
+
+---
+
+## 📐 Organização e Estrutura dos Dados
+
+O projeto reúne movimentações financeiras provenientes de diferentes instituições bancárias, considerando duas pessoas e suas respectivas contas.
+
+### Fontes de Dados
+
+| Pessoa | Instituição | Formato |
+|---|---|---|
+| Henrique | Itaú | PDF |
+| Henrique | Bradesco | PDF |
+| Natan | Santander | Excel |
 
-Estrutura e Organização dos Dados
+O Bradesco foi utilizado como fonte de importação histórica, enquanto o Itaú e o Santander compõem as fontes de atualização recorrente.
+
+### Estrutura da Base Histórica
 
-O projeto utiliza uma estrutura centralizada para reunir movimentações financeiras de diferentes pessoas e instituições bancárias.
+Após o processo de transformação, os dados são organizados em uma estrutura padronizada:
 
-As fontes consideradas incluem:
+| Campo | Descrição |
+|---|---|
+| Arquivo | Identificação do arquivo de origem |
+| Data | Data da movimentação |
+| Descrição | Histórico do lançamento |
+| Valor | Valor da movimentação |
+| Pessoa | Identificação do responsável |
+| Banco | Instituição financeira |
+| Categoria | Classificação da movimentação |
+| ID_Lancamento | Identificador do lançamento |
 
-Henrique — Itaú (PDF)
+Essa estrutura permite reunir diferentes fontes em uma única base, facilitando análises individuais e consolidadas.
 
-Henrique — Bradesco (PDF, importação histórica)
+---
 
-Natan — Santander (Excel)
+## 🔄 ETL — Extração, Transformação e Carga
+
+O processo de ETL foi desenvolvido utilizando **Power Query**, permitindo automatizar a leitura e o tratamento dos arquivos financeiros.
 
-A estrutura de dados busca padronizar os lançamentos em campos comuns, como:
+### 1. Extração (Extract)
 
-Arquivo
+- Importação de extratos bancários em PDF e Excel
+- Leitura de arquivos armazenados em pastas específicas
+- Separação das fontes por pessoa e instituição financeira
+
+### 2. Transformação (Transform)
 
-Data
+- Padronização dos nomes das colunas
+- Conversão dos tipos de dados
+- Tratamento de créditos e débitos
+- Organização dos lançamentos por pessoa e banco
+- Remoção de informações desnecessárias
+- Categorização automática das movimentações
+- Criação de identificadores para os lançamentos
 
-Descrição
+### 3. Carga (Load)
 
-Valor
+- Consolidação das diferentes fontes
+- Construção de uma base histórica
+- Preparação dos dados para alimentar os indicadores
+- Atualização das informações a partir dos novos arquivos de entrada
 
-Pessoa
+### Fluxo do Processo
+
+```text
+       EXTRATOS BANCÁRIOS
+                │
+                ▼
+        EXTRAÇÃO DOS DADOS
+                │
+                ▼
+       POWER QUERY (ETL)
+                │
+                ▼
+       TRATAMENTO E PADRONIZAÇÃO
+                │
+                ▼
+       CATEGORIZAÇÃO DOS DADOS
+                │
+                ▼
+       BASE HISTÓRICA DO CASAL
+                │
+                ▼
+        DASHBOARD FINANCEIRO
+                │
+                ▼
+        ANÁLISE E INSIGHTS
+```
 
-Banco
+---
 
-Categoria
+## 📊 Indicadores Desenvolvidos
 
-Essa padronização permite consolidar diferentes origens em uma única base para análise.
+### Visão Geral
 
-ETL — Extração, Transformação e Carga
+- Despesas consolidadas
+- Comparação dos gastos individuais
+- Movimentação financeira do casal
 
-O tratamento dos dados é realizado utilizando Power Query.
+### Controle Individual
 
-Principais etapas do processo:
+- Despesas por pessoa
+- Distribuição dos gastos por categoria
+- Participação individual nas despesas
 
-Importação de arquivos bancários
+### Comparação do Casal
 
-Extração de tabelas dos extratos
+- Comparativo de gastos
+- Diferença entre despesas individuais
+- Análise das categorias de consumo
 
-Padronização dos nomes das colunas
+### Análise de Despesas
 
-Conversão dos tipos de dados
+- Distribuição por categoria
+- Identificação dos principais gastos
+- Evolução das movimentações financeiras
 
-Tratamento de créditos e débitos
+---
 
-Remoção de informações desnecessárias
+## 📈 Storytelling
 
-Organização dos lançamentos por pessoa e banco
+O dashboard foi desenvolvido com foco em **Storytelling com Dados**, buscando transformar informações financeiras em análises de fácil compreensão.
 
-Categorização das movimentações
+A navegação foi pensada para conduzir o usuário de uma visão consolidada até uma análise mais detalhada dos gastos.
 
-Consolidação das informações em uma base histórica
+```text
+        VISÃO GERAL
+             ↓
+     CONTROLE INDIVIDUAL
+             ↓
+    COMPARAÇÃO DO CASAL
+             ↓
+     ANÁLISE DE DESPESAS
+             ↓
+        INSIGHTS
+```
 
-A estrutura foi planejada para facilitar a atualização dos dados conforme novos extratos são adicionados às pastas de entrada.
+Além do acompanhamento financeiro, o projeto busca responder perguntas importantes para a organização de um casal:
 
-Indicadores Desenvolvidos
+- Quanto cada pessoa está gastando?
+- Quais são as principais categorias de despesas?
+- Como os hábitos de consumo se comparam?
+- Onde estão concentrados os maiores gastos?
+- Como podemos planejar nossos objetivos financeiros em conjunto?
 
-Visão Geral
+A proposta é utilizar dados para promover mais transparência financeira, sem comprometer a autonomia individual de cada pessoa.
 
-Total de despesas
+---
 
-Comparação dos gastos individuais
+## 💡 Principais Aprendizados
 
-Movimentação financeira consolidada
+Durante o desenvolvimento deste projeto, os principais conhecimentos trabalhados envolvem:
 
-Controle Individual
+- ETL e automação de dados
+- Power Query
+- Consolidação de múltiplas fontes
+- Tratamento de arquivos PDF e Excel
+- Padronização e categorização de informações
+- Organização de bases históricas
+- Indicadores financeiros
+- Storytelling com Dados
+- UX para Dashboards
+- Data Visualization
+- Resolução de problemas reais utilizando dados
 
-Despesas por pessoa
+---
 
-Distribuição por categoria
+## 🚀 Próximas Etapas
 
-Evolução dos gastos
+O HenriTan é um projeto em evolução. Entre os próximos passos estão:
 
-Comparação do Casal
+- Aprimoramento das regras de categorização
+- Expansão dos indicadores financeiros
+- Evolução da estrutura de automação
+- Melhorias na experiência de navegação
+- Documentação detalhada de cada etapa do desenvolvimento
 
-Participação individual nas despesas
+As atualizações serão documentadas neste repositório, desde o tratamento dos dados até a construção dos indicadores e evolução do dashboard.
 
-Diferença entre os gastos
+---
 
-Comparação por categoria
+## 👨‍💻 Autor
 
-Os indicadores e suas regras de cálculo serão documentados conforme a evolução do projeto.
+**Henrique Sousa**
 
-Storytelling
+Análise e Desenvolvimento de Sistemas | Dados e Business Intelligence
 
-O dashboard foi pensado para responder perguntas práticas sobre a organização financeira do casal.
+🔗 **GitHub:** [henriquessousa93-ops](https://github.com/henriquessousa93-ops)
 
-Quanto cada pessoa está gastando?
+🔗 **LinkedIn:** [Henrique Sousa](https://www.linkedin.com/in/henriquesousaa/)
 
-Quais são as principais categorias de despesas?
+---
 
-Como os gastos individuais se comparam?
+## ⭐ Se gostou do projeto
 
-Onde estão concentradas as maiores despesas?
-
-Como está evoluindo a movimentação financeira?
-
-A proposta é transformar os dados em uma visão compartilhada, facilitando conversas e decisões financeiras sem comprometer a autonomia individual.
-
-Principais Aprendizados
-
-O desenvolvimento deste projeto permite aprofundar conhecimentos em:
-
-ETL e automação de dados
-
-Power Query
-
-Consolidação de diferentes fontes de dados
-
-Padronização e categorização de informações
-
-Organização de bases históricas
-
-Indicadores financeiros
-
-Data Visualization
-
-Design de dashboards
-
-Resolução de problemas reais utilizando dados
-
-Autor
-
-Henrique Sousa
-
-Tecnologia em Análise e Desenvolvimento de Sistemas | Dados e Business Intelligence
-
-LinkedIn
-
-GitHub
-
-⭐ Se gostou do projeto, deixe uma estrela no repositório!
+Deixe uma ⭐ no repositório e acompanhe a evolução do HenriTan!
