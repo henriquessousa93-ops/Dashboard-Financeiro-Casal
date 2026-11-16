@@ -1,7 +1,7 @@
 # Dashboard-Financeiro-Casal
 Projeto de controle financeiro para casais, com tratamento de dados, consolidação de extratos e dashboard interativo.
 
-*Sobre o Projeto*
+# Sobre o Projeto
 
 O HenriTan é um projeto de controle financeiro para casais, desenvolvido com o objetivo de centralizar informações financeiras individuais e compartilhadas em uma única estrutura de análise.
 
